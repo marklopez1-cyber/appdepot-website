@@ -328,7 +328,12 @@
       </ul>
     </div>
 
-    <form class="cta__form" id="contactForm" action="mailto:admin@appdepot.net" method="post" enctype="text/plain">
+    <form class="cta__form" id="contactForm" action="https://formsubmit.co/admin@appdepot.net" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry from appdepot.net" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://appdepot.net/thankyou.html" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <div class="field">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required placeholder="Your name" />
