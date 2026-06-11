@@ -17,6 +17,19 @@
     });
   }
 
+  // Auto-format phone as (XXX)XXX-XXXX
+  var phone = document.getElementById('phone');
+  if (phone) {
+    phone.addEventListener('input', function () {
+      var d = phone.value.replace(/\D/g, '').slice(0, 10);
+      var out = '';
+      if (d.length < 3) out = d.length ? '(' + d : '';
+      else if (d.length < 6) out = '(' + d.slice(0, 3) + ')' + d.slice(3);
+      else out = '(' + d.slice(0, 3) + ')' + d.slice(3, 6) + '-' + d.slice(6);
+      phone.value = out;
+    });
+  }
+
   // Current year in footer
   var yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();
