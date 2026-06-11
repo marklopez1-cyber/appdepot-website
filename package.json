@@ -1,0 +1,9 @@
+{
+  "name": "appdepot-website",
+  "version": "1.0.0",
+  "description": "Static marketing website for AppDepot LLC.",
+  "private": true,
+  "scripts": {
+    "build": "echo \"Static site — no build step required.\""
+  }
+}
