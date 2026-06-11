@@ -35,6 +35,6 @@ bash deploy.sh "Describe your change"
 - **Publish directory:** `.` (repo root)
 
 ## Things to customize
-- Contact emails (`hello@appdepot.net`, `sales@appdepot.net`)
+- Contact email (`admin@appdepot.net`)
 - Pricing/engagement details in the `#pricing` section
 - Wire the contact form to a backend or form service (currently uses a `mailto:` fallback)
