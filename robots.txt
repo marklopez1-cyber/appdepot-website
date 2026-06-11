@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appdepot.net/sitemap.xml
